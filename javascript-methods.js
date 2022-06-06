@@ -105,5 +105,9 @@ Object.myKeys = function(object) {
 
 // VALUES //
 Object.myValues = function(object) {
-  // Place your code here.
+  let values = [];
+  for(let key in object){
+    values.push(object[key]);
+  }
+  return values;
 };
